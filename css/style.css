@@ -93,40 +93,26 @@
 	
 	/* CSS accordion */
 	.accordion { 
-		width:100%;
-		overflow:hidden;
-		margin: 20px 0 0;
 	}
 	.accordion section { 
 		float:left;
-		overflow:hidden;
 		width:100%; 
-		-webkit-transition:visibility 0.2s ease-out;
-		-moz-transition:visibility 0.2s ease-out;
-		-o-transition:visibility 0.2s ease-out;
-		transition:visibility 0.2s ease-out;
-		margin: 0 0 20px;
-	}
-	
-	.accordion section h2:after{
-		position:relative;
-		float: right;
-		display:inline-block;
-	}
-	.accordion section h2:after{ content:url(../images/plus.png); }
-
-	.accordion section:target h2:after{ 
-		left: -9999px;
 	}
 	
 	.accordion section h2:hover {
 		background-color:#c9d7a6;
+		cursor: pointer;
 	}
 	.accordion .training-summary { 
-		display: none; 
 		padding: 10px 5px;
 	}
+	.accordion .accordion-content {
+		display:none;
+	}
 
+	.accordion-content.open {
+		display: block;
+	}
 	.accordion section:target:hover .training-summary { 
 		background:#F9F9F9; 
 	}

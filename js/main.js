@@ -1,3 +1,40 @@
+
+  $(document).ready(function($) {
+    $('.accordion').find('.accordion-toggle').click(function(){
+
+    	//Hide the other panels
+      $(".accordion-content").not($(this).next()).slideUp('fast');
+      $(".accordion-content").not($(this).next()).removeClass("open");
+
+      //Expand or collapse this panel
+      $(this).next().slideToggle('fast');
+      $(this).next().toggleClass("open");
+
+      $.each($(".accordion").contents(), function(index, section){
+      	if (index % 2 === 1){
+	      	console.log(index + " " + section);
+	      	if ($(section).find(".training-summary").hasClass("open")) {
+	      		$(section).find(".icon-expand-contract").attr("src", 'images/minus.png');
+	      	} else {
+	      		$(section).find(".icon-expand-contract").attr("src", 'images/plus.png');
+	      		console.log("hey girl");
+	      	}
+	      }
+      	/*
+      	if (section.children(".training-summary").hasClass("open")) {
+      		console.log(index + " " + section);
+      		section.find(".icon-expand-contract").attr("src", 'images/minus.png');
+      	} else {
+      		section.find(".icon-expand-contract").attr("src", 'images/plus.png');
+      	}*/
+      });
+
+
+
+    });
+  });
+
+
 var eventDates = [
 	{
 		"month" : "May",
