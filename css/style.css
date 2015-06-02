@@ -1,0 +1,146 @@
+	#MainContainer {
+		width: 960px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	#MainContainer h1 {
+		margin-top: 0;
+	}
+	
+	#MainContainer h1:first-child {
+		margin-top: 1em; 
+	}
+		
+	ul ul, ol ul {
+		list-style-type: disc;
+	}
+	ul {
+		list-style-type: none;
+	}
+	ul li {
+		margin: 8px 0 0;
+	}
+	.noprint li {
+		margin: 0;
+	}
+	
+	#events {
+		padding: 0;
+	}
+	
+	#events li {
+		width:49%;
+		float: left;
+		margin: 0;
+	}
+	
+	#events li:last-child {
+		margin-bottom: 20px;
+	}
+	
+	#events li:hover {
+		background: #ECF3D6;
+	}
+	
+	#events .icon-location {
+		display: inline;
+	}
+	
+	#events .event-info {
+		display: inline;
+	}
+	
+	#events .event-info hr {
+		font-size:12px;
+		border-bottom: 0;
+	}
+	
+	#events h3 {
+		display:inline-block;
+		margin:0;
+		font-size: 14px;
+		font-weight: normal;
+	}
+	
+	a, a:link, a:visited {
+		text-decoration: none;
+		color: #859750;
+	}
+	
+	a:hover {
+		color: inherit;
+		text-decoration: underline;
+	}
+	
+	.calendar {
+		width: 96px;
+		height: 96px;
+		background-image: url("../images/icon_calendar.png");
+		display: inline-block;
+	}
+	
+	.calendar h5 {
+		text-align: center;
+		margin-top: 40px;
+		font-size: 12px;
+		line-height:1.5em;
+	}
+	
+	ol li {
+		margin: 4px 0;
+	}
+	
+	/* CSS accordion */
+	.accordion { 
+		width:100%;
+		overflow:hidden;
+		margin: 20px 0 0;
+	}
+	.accordion section { 
+		float:left;
+		overflow:hidden;
+		width:100%; 
+		-webkit-transition:visibility 0.2s ease-out;
+		-moz-transition:visibility 0.2s ease-out;
+		-o-transition:visibility 0.2s ease-out;
+		transition:visibility 0.2s ease-out;
+		margin: 0 0 20px;
+	}
+	
+	.accordion section h2:after{
+		position:relative;
+		float: right;
+		display:inline-block;
+	}
+	.accordion section h2:after{ content:url(../images/plus.png); }
+
+	.accordion section:target h2:after{ 
+		left: -9999px;
+	}
+	
+	.accordion section h2:hover {
+		background-color:#c9d7a6;
+	}
+	.accordion .training-summary { 
+		display: none; 
+		padding: 10px 5px;
+	}
+
+	.accordion section:target:hover .training-summary { 
+		background:#F9F9F9; 
+	}
+	.accordion section:target .training-summary {
+		display:block;
+	}
+	.accordion section a, .accordion section a:hover, .accordion section a:active, .accordion section:target a {
+		text-decoration: none;
+	}
+	
+	.accordion section h2 { 
+		position:relative; 
+		left:0; 
+		background-color: #ECF3D6;
+		margin: 0;
+		padding: 10px
+	}		
