@@ -1,132 +1,171 @@
-	#MainContainer {
-		width: 960px;
-		margin-right: auto;
-		margin-left: auto;
-	}
+#MainContainer {
+	width: 960px;
+	margin: 0 40px;
+}
 
-	#MainContainer h1 {
-		margin-top: 0;
-	}
-	
-	#MainContainer h1:first-child {
-		margin-top: 1em; 
-	}
-		
-	ul ul, ol ul {
-		list-style-type: disc;
-	}
-	ul {
-		list-style-type: none;
-	}
-	ul li {
-		margin: 8px 0 0;
-	}
-	.noprint li {
-		margin: 0;
-	}
-	
-	#events {
-		padding: 0;
-	}
-	
-	#events li {
-		width:49%;
-		float: left;
-		margin: 0;
-	}
-	
-	#events li:last-child {
-		margin-bottom: 20px;
-	}
-	
-	#events li:hover {
-		background: #ECF3D6;
-	}
-	
-	#events .icon-location {
-		display: inline;
-	}
-	
-	#events .event-info {
-		display: inline;
-	}
-	
-	#events .event-info hr {
-		font-size:12px;
-		border-bottom: 0;
-	}
-	
-	#events h3 {
-		display:inline-block;
-		margin:0;
-		font-size: 14px;
-		font-weight: normal;
-	}
-	
-	a, a:link, a:visited {
-		text-decoration: none;
-		color: #859750;
-	}
-	
-	a:hover {
-		color: inherit;
-		text-decoration: underline;
-	}
-	
-	.calendar {
-		width: 96px;
-		height: 96px;
-		background-image: url("../images/icon_calendar.png");
-		display: inline-block;
-	}
-	
-	.calendar h5 {
-		text-align: center;
-		margin-top: 40px;
-		font-size: 12px;
-		line-height:1.5em;
-	}
-	
-	ol li {
-		margin: 4px 0;
-	}
-	
-	/* CSS accordion */
-	.accordion { 
-	}
-	.accordion section { 
-		float:left;
-		width:100%; 
-	}
-	
-	.accordion section h2:hover {
-		background-color:#c9d7a6;
-		cursor: pointer;
-	}
-	.accordion .training-summary { 
-		padding: 10px 5px;
-	}
-	.accordion .accordion-content {
-		display:none;
-	}
+#MainContainer h1 {
+	margin-top: 0;
+}
 
-	.accordion-content.open {
-		display: block;
-	}
-	.accordion section:target:hover .training-summary { 
-		background:#F9F9F9; 
-	}
-	.accordion section:target .training-summary {
-		display:block;
-	}
-	.accordion section a, .accordion section a:hover, .accordion section a:active, .accordion section:target a {
-		text-decoration: none;
-	}
+#MainContainer h1:first-child {
+	margin-top: 1em; 
+}
 	
-	.accordion section h2 { 
-		position:relative; 
-		left:0; 
-		background-color: #ECF3D6;
-		margin: 0;
-		padding: 10px
-	}		
+ul ul, ol ul {
+	list-style-type: disc;
+}
+ul {
+	list-style-type: none;
+}
+ul li {
+	margin: 8px 0 0;
+}
+.noprint li {
+	margin: 0;
+}
+
+#events ul {
+	padding: 0;
+}
+
+#events li {
+	width:49%;
+	float: left;
+	margin: 0;
+}
+
+#events li:last-child {
+	margin-bottom: 20px;
+}
+
+#events li:hover {
+	background: #ECF3D6;
+}
+
+#events li.emptyLi {
+	height: 96px;
+	width: 49%;
+	margin-bottom: 20px;
+}
+
+#events li.emptyLi:hover {
+	background:none;
+}
+
+
+#events .icon-location, #events .event-info {
+	display: inline;
+}
+
+#events .event-info hr {
+	font-size:12px;
+	border-bottom: 0;
+	color: #ECF3D6;
+}
+
+#events h3 {
+	display:inline-block;
+	margin:0;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.dark-green {
+	color: #c9d7a6;
+}
+
+a, a:link, a:visited {
+	text-decoration: none;
+	color: #859750;
+}
+
+a:hover {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.calendar {
+	width: 96px;
+	height: 96px;
+	background-image: url("../images/icon_calendar.png");
+	display: inline-block;
+}
+
+.calendar h5 {
+	text-align: center;
+	margin-top: 40px;
+	font-size: 12px;
+	line-height:1.5em;
+}
+
+ol li {
+	margin: 4px 0;
+}
+
+.accordion {
+	margin: 20px 0;
+}
+
+.accordion section { 
+	float:left;
+	width:100%; 
+	border: 1px solid #EEE;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+
+.accordion section h2:hover {
+	background-color:#c9d7a6;
+	cursor: pointer;
+}
+.accordion .training-summary  { 
+	padding: 10px 5px;
+}
+.accordion .accordion-content{
+	display:none;
+	padding: 10px 0 10px 10px;
+}
+.accordion-content.open, .accordion section:target .training-summary {
+	display: block;
+}
+.accordion section:target:hover .training-summary { 
+	background:#F9F9F9; 
+}
+
+.accordion section a, .accordion section a:hover, .accordion section a:active, .accordion section:target a {
+	text-decoration: none;
+}
+
+.accordion section h2 { 
+	font-family: "Arial Black","Arial Bold","Helvetica Neue", "Helvetica", tahoma, arial, sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	color: #333;
+	position:relative; 
+	left:0; 
+	background-color: #F9F9F9;
+	margin: 0;
+	padding: 15px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	letter-spacing: .4px;
+}
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+   font-weight: 800;
+}
+
+.accordion section {
+	margin-bottom: 10px;
+}
+
+.icon-expand-contract {
+	float:right;
+	margin-top: 4px;
+}
+
+.icon-location {
+	border:none;
+	outline:none;
+}
