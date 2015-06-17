@@ -14,9 +14,9 @@ $(document).ready(function($) {
 
 		$.each($(".accordion").contents(), function(index, section){
 	      	if ($(section).find(".accordion-content").hasClass("open")) {
-	      		$(section).find(".icon-expand-contract").attr("src", 'images/minus.png');
+	      		$(section).find(".icon-expand-contract").attr("src", '../images/icons/minus.png');
 	      	} else {
-	      		$(section).find(".icon-expand-contract").attr("src", 'images/plus.png');
+	      		$(section).find(".icon-expand-contract").attr("src", '../images/icons/plus.png');
 	      	}
 	      
       	});
@@ -104,9 +104,9 @@ function populateEvents() {
 				"month" : "Aug",
 				"date" : "12-14",
 				"time" : "8:00 AM",
-				"description" : "Level 2 Training<span style='color:#E60505;'>*</span>",
+				"description" : "Level 2 Training",
 				"location" : "Middleton, WI",
-				"link" : "#August"
+				"link" : "http://www.cvent.com/d/1rqx3n"
 			},
 			{
 				"date": moment("2015-08-21 11"),
@@ -304,10 +304,10 @@ function populateEvents() {
 		section.appendChild(h2);
 		if (i === 0) {
 			div.className = "accordion-content open";
-			img.src = 'images/minus.png';
+			img.src = '../images/icons/minus.png';
 		} else {
 			div.className = "accordion-content";
-			img.src = 'images/plus.png';
+			img.src = '../images/icons/plus.png';
 		}
 
 		var numberOfEvents = eventDates[i].length;
@@ -318,14 +318,16 @@ function populateEvents() {
 		
 			if (eventDates[i][j].location === "Online") {
 				eventHtml = "<div class=\"calendar\"><h5>" + eventDates[i][j].date.format("MMM D") + "<br />" + eventDates[i][j].date.format("h:mm A") + "</h5></div>" +
-						   "<div class='event-info'><h3>" + eventDates[i][j].description + "<hr /><img class='icon-location' src='images/location.png' alt='Location Symbol' /> " + eventDates[i][j].location + ", "+ eventDates[i][j].date.format("h:mm A") + " EST/" + eventDates[i][j].date.subtract(1, "h").format("h:mm A") +" CST</h3></div>";
-				a.target = "_blank";
+						   "<div class='event-info'><h3>" + eventDates[i][j].description + "<hr /><img class='icon-location' src='../images/icons/location.png' alt='Location Symbol' /> " + eventDates[i][j].location + ", "+ eventDates[i][j].date.format("h:mm A") + " EST/" + eventDates[i][j].date.subtract(1, "h").format("h:mm A") +" CST</h3></div>";
 			} else {
 				eventHtml = "<div class=\"calendar\"><h5>" + eventDates[i][j].month + " " + eventDates[i][j].date + "<br />" + eventDates[i][j].time + "</h5></div>" +
-						   "<div class='event-info'><h3>" + eventDates[i][j].description + "<hr /><img class='icon-location' src='images/location.png' alt='Location Symbol' /> " + eventDates[i][j].location + "</h3></div>";
+						   "<div class='event-info'><h3>" + eventDates[i][j].description + "<hr /><img class='icon-location' src='../images/icons/location.png' alt='Location Symbol' /> " + eventDates[i][j].location + "</h3></div>";
 			}
 			li.innerHTML = eventHtml;
 			a.appendChild(li);
+			if(eventDates[i][j].link.substring(0,1) !== "#"){
+				a.target = "_blank";
+			}
 			a.href = eventDates[i][j].link;
 			ul.appendChild(a);
 			if (eventDates[i][j].location !== "Online") {
