@@ -14,9 +14,9 @@ $(document).ready(function($) {
 
 		$.each($(".accordion").contents(), function(index, section){
 	      	if ($(section).find(".accordion-content").hasClass("open")) {
-	      		$(section).find(".icon-expand-contract").attr("src", '../images/icons/minus.png');
+	      		$(section).find(".icon-expand-contract").attr("src", 'images/minus.png');
 	      	} else {
-	      		$(section).find(".icon-expand-contract").attr("src", '../images/icons/plus.png');
+	      		$(section).find(".icon-expand-contract").attr("src", 'images/plus.png');
 	      	}
 	      
       	});
@@ -304,10 +304,10 @@ function populateEvents() {
 		section.appendChild(h2);
 		if (i === 0) {
 			div.className = "accordion-content open";
-			img.src = '../images/icons/minus.png';
+			img.src = 'images/minus.png';
 		} else {
 			div.className = "accordion-content";
-			img.src = '../images/icons/plus.png';
+			img.src = 'images/plus.png';
 		}
 
 		var numberOfEvents = eventDates[i].length;
@@ -318,10 +318,10 @@ function populateEvents() {
 		
 			if (eventDates[i][j].location === "Online") {
 				eventHtml = "<div class=\"calendar\"><h5>" + eventDates[i][j].date.format("MMM D") + "<br />" + eventDates[i][j].date.format("h:mm A") + "</h5></div>" +
-						   "<div class='event-info'><h3>" + eventDates[i][j].description + "<hr /><img class='icon-location' src='../images/icons/location.png' alt='Location Symbol' /> " + eventDates[i][j].location + ", "+ eventDates[i][j].date.format("h:mm A") + " EST/" + eventDates[i][j].date.subtract(1, "h").format("h:mm A") +" CST</h3></div>";
+						   "<div class='event-info'><h3>" + eventDates[i][j].description + "<hr /><img class='icon-location' src='images/location.png' alt='Location Symbol' /> " + eventDates[i][j].location + ", "+ eventDates[i][j].date.format("h:mm A") + " EST/" + eventDates[i][j].date.subtract(1, "h").format("h:mm A") +" CST</h3></div>";
 			} else {
 				eventHtml = "<div class=\"calendar\"><h5>" + eventDates[i][j].month + " " + eventDates[i][j].date + "<br />" + eventDates[i][j].time + "</h5></div>" +
-						   "<div class='event-info'><h3>" + eventDates[i][j].description + "<hr /><img class='icon-location' src='../images/icons/location.png' alt='Location Symbol' /> " + eventDates[i][j].location + "</h3></div>";
+						   "<div class='event-info'><h3>" + eventDates[i][j].description + "<hr /><img class='icon-location' src='images/location.png' alt='Location Symbol' /> " + eventDates[i][j].location + "</h3></div>";
 			}
 			li.innerHTML = eventHtml;
 			a.appendChild(li);
