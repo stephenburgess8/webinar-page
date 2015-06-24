@@ -56,6 +56,10 @@ body {
 	background-color:#c8d6e9;
 	cursor: pointer;
 }
+.accordion section h2:hover {
+	background-color:#c8d6e9;
+	cursor: pointer;
+}
 #events h3 {
 	display:inline-block;
 	font-size: 14px;
