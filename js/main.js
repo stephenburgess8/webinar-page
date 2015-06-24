@@ -28,60 +28,37 @@ function populateEvents() {
 	var eventDates = [
 		[
 			{
-				"month": "June"
-			},
-			{
-				"date": moment("2015-06-26 11"),
-				"description" : "animeo IP Webinar",
-				"location" : "Online",
-				"link" : "https://www.surveymonkey.com/s/YZWH28H"
-			},
-			{
-				"date": moment("2015-06-26 16"),
-				"description" : "Motor Systems Webinar",
-				"location" : "Online",
-				"link" : "https://www.surveymonkey.com/s/YZGWBQ8"
-			}
-		],
-		[
-			{
 				"month": "July"
 			},
 			{
-				"date": moment("2015-07-10 11"),
-				"description" : "TruePerformance Webinar",
+				"date": moment("2015-07-11 13"),
+				"description" : "Foundations: Technical Requirements",
 				"location" : "Online",
-				"link" : "https://www.surveymonkey.com/s/63RJMF9"
+				"link" : "http://sburgess.us"
 			},
 			{
-				"date": moment("2015-07-10 16"),
-				"description" : "RTS Motor Webinar",
+				"date": moment("2015-07-11 18"),
+				"description" : "Foundations: Action Items",
 				"location" : "Online",
-				"link" : "https://www.surveymonkey.com/s/6GXF9W9"
+				"link" : "http://sburgess.us"
 			},
 			{
-				"date": moment("2015-07-17 11"),
-				"description" : "animeo IP Webinar",
+				"date": moment("2015-07-15 08"),
+				"description" : "WebCast Strategies<span style='color:#E60505;'>*</span>",
 				"location" : "Online",
-				"link" : "https://www.surveymonkey.com/s/5RJLGF5"
+				"link" : "#July"
 			},
 			{
-				"date": moment("2015-07-17 16"),
-				"description" : "RTS Motor Webinar",
+				"date": moment("2015-07-15 18"),
+				"description" : "Hardware Overview",
 				"location" : "Online",
-				"link" : "https://www.surveymonkey.com/s/5RWCJ6S"
+				"link" : "http://sburgess.us"
 			},
 			{
-				"date": moment("2015-07-24 11"),
-				"description" : "Intelligent-RS485 Motor Webinar",
+				"date": moment("2015-07-26 18"),
+				"description" : "Promoting your Webinars",
 				"location" : "Online",
-				"link" : "https://www.surveymonkey.com/s/5RT96KT"
-			},
-			{
-				"date": moment("2015-07-24 16"),
-				"description" : "Motor Systems Webinar",
-				"location" : "Online",
-				"link" : "https://www.surveymonkey.com/s/5RMSNHF"
+				"link" : "http://sburgess.us"
 			}
 		],
 		[
@@ -89,48 +66,48 @@ function populateEvents() {
 				"month": "August"
 			},
 			{
-				"date": moment("2015-08-07 11"),
-				"description" : "Intelligent-RS485 Motor Webinar",
+				"date": moment("2015-08-02 09"),
+				"description" : "Foundations: What to Expect",
 				"location" : "Online",
-				"link" : "https://www.surveymonkey.com/s/5RNTBBB"
+				"link" : "http://sburgess.us"
 			},
 			{
-				"date": moment("2015-08-07 16"),
-				"description" : "Standard Motor Webinar",
+				"date": moment("2015-08-02 17"),
+				"description" : "Foundations: Look your best!",
 				"location" : "Online",
-				"link" : "https://www.surveymonkey.com/s/5RGW26P"
+				"link" : "http://sburgess.us"
+			},
+			{
+				"date": moment("2015-08-20 07"),
+				"description" : "WebCast Strategies and Technologies<span style='color:#E60505;'>*</span>",
+				"location" : "Online",
+				"link" : "#August"
+			},
+			{
+				"date": moment("2015-08-20 19"),
+				"description" : "Making a Website for your Webinar Series",
+				"location" : "Online",
+				"link" : "http://sburgess.us"
 			},
 			{
 				"month" : "Aug",
-				"date" : "12-14",
+				"date" : "22-24",
 				"time" : "8:00 AM",
-				"description" : "Level 2 Training",
-				"location" : "Middleton, WI",
-				"link" : "http://www.cvent.com/d/1rqx3n"
+				"description" : "Annual Webinar Convention",
+				"location" : "Madison, WI",
+				"link" : "http://sburgess.us"
 			},
 			{
-				"date": moment("2015-08-21 11"),
-				"description" : "animeo IP Webinar",
+				"date": moment("2015-08-29 11"),
+				"description" : "Presentation Tips and Tricks",
 				"location" : "Online",
-				"link" : "https://www.surveymonkey.com/s/5RPS2YC"
+				"link" : "http://sburgess.us"
 			},
 			{
-				"date": moment("2015-08-21 16"),
-				"description" : "Standard Motor Webinar",
+				"date": moment("2015-08-29 18"),
+				"description" : "Connecting with your Audience<span style='color:#E60505;'>*</span>",
 				"location" : "Online",
-				"link" : "https://www.surveymonkey.com/s/5TK2X3G"
-			},
-			{
-				"date": moment("2015-08-28 11"),
-				"description" : "Standard Motor Webinar",
-				"location" : "Online",
-				"link" : "https://www.surveymonkey.com/s/5TVNTTK"
-			},
-			{
-				"date": moment("2015-08-28 16"),
-				"description" : "Motor Systems Webinar",
-				"location" : "Online",
-				"link" : "https://www.surveymonkey.com/s/5TDDV92"
+				"link" : "#August"
 			}
 		],
 		[
@@ -138,36 +115,36 @@ function populateEvents() {
 				"month": "September"
 			},
 			{
-				"date": moment("2015-09-04 11"),
-				"description" : "TrueOutlook Webinar",
+				"date": moment("2015-09-07 10"),
+				"description" : "Foundations: Deciding on a Webinar",
 				"location" : "Online",
-				"link" : "https://www.surveymonkey.com/s/5T22Y7Q"
+				"link" : "http://sburgess.us"
 			},
 			{
-				"date": moment("2015-09-04 16"),
-				"description" : "animeo IP Webinar",
+				"date": moment("2015-09-07 19"),
+				"description" : "Hardware Overview",
 				"location" : "Online",
-				"link" : "https://www.surveymonkey.com/s/5TJFCM2"
+				"link" : "http://sburgess.us"
 			},
 			{
-				"date": moment("2015-09-18 11"),
-				"description" : "Intelligent-RS485 Motor Webinar",
+				"date": moment("2015-09-17 09"),
+				"description" : "Presentation Tips and Tricks",
 				"location" : "Online",
-				"link" : "https://www.surveymonkey.com/s/5TWXKCK"
+				"link" : "http://sburgess.us"
 			},
 			{
-				"date": moment("2015-09-18 16"),
-				"description" : "TrueOutlook Webinar",
+				"date": moment("2015-09-17 15"),
+				"description" : "Foundations: Get the Most<span style='color:#E60505;'>*</span>",
 				"location" : "Online",
-				"link" : "https://www.surveymonkey.com/s/5TRF72V"
+				"link" : "#September"
 			},
 			{
 				"month" : "Sep",
-				"date" : "23-25",
+				"date" : "26-28",
 				"time" : "8:00 AM",
-				"description" : "Level 3 Training<span style='color:#E60505;'>*</span>",
-				"location" : "Middleton, WI",
-				"link" : "#September"
+				"description" : "Annual Webinar Convention",
+				"location" : "Madison, WI",
+				"link" : "http://sburgess.us"
 			}
 		],
 		[
@@ -175,106 +152,46 @@ function populateEvents() {
 				"month": "October"
 			},
 			{
-				"date": moment("2015-10-02 11"),
-				"description" : "TruePerformance Webinar",
+				"date": moment("2015-10-01 12"),
+				"description" : "WebCast Strategies and Technologies",
 				"location" : "Online",
-				"link" : "https://www.surveymonkey.com/s/5TMYPM8"
+				"link" : "http://sburgess.us"
 			},
 			{
-				"date": moment("2015-10-02 16"),
-				"description" : "Selecting Motorization Webinar",
+				"date": moment("2015-10-01 16"),
+				"description" : "Foundations: Deciding on a Webinar",
 				"location" : "Online",
-				"link" : "https://www.surveymonkey.com/s/5T3MX3N"
+				"link" : "http://sburgess.us"
 			},
 			{
-				"month" : "Oct",
-				"date" : "5-7",
-				"time" : "8:00 AM",
-				"description" : "Level 2 Training<span style='color:#E60505;'>*</span>",
-				"location" : "Somfy, CA",
+				"date": moment("2015-10-16 06"),
+				"description" : "Special Lecture by Steve Bezos<span style='color:#E60505;'>*</span>",
+				"location" : "Online",
 				"link" : "#October"
 			},
 			{
-				"month" : "Oct",
-				"date" : "7-9",
-				"time" : "8:00 AM",
-				"description" : "Level 2 Training<span style='color:#E60505;'>*</span>",
-				"location" : "Somfy, CA",
+				"date": moment("2015-10-16 21"),
+				"description" : "Special Webinar: In the News<span style='color:#E60505;'>*</span>",
+				"location" : "Online",
 				"link" : "#October"
 			},
 			{
-				"date": moment("2015-10-16 11"),
-				"description" : "TrueOutlook Webinar",
+				"date": moment("2015-10-22 13"),
+				"description" : "Foundations: Action Items",
 				"location" : "Online",
-				"link" : "https://www.surveymonkey.com/s/5TH2NXC"
+				"link" : "http://sburgess.us"
 			},
 			{
-				"date": moment("2015-10-16 16"),
-				"description" : "Selecting Motorization Webinar",
+				"date": moment("2015-10-22 22"),
+				"description" : "Foundations: What to Expect",
 				"location" : "Online",
-				"link" : "https://www.surveymonkey.com/s/5T6JBMW"
+				"link" : "http://sburgess.us"
 			},
 			{
-				"month" : "Oct",
-				"date" : "21-23",
-				"time" : "8:00 AM",
-				"description" : "Level 2 Training<span style='color:#E60505;'>*</span>",
-				"location" : "TBD",
-				"link" : "#October"
-			},
-			{
-				"date": moment("2015-10-30 11"),
-				"description" : "Standard Motor Webinar",
+				"date": moment("2015-10-31 23"),
+				"description" : "Special Webinar: Halloween Promotions",
 				"location" : "Online",
-				"link" : "https://www.surveymonkey.com/s/5TH2NXC"
-			},
-			{
-				"date": moment("2015-10-30 16"),
-				"description" : "RTS Motor Webinar",
-				"location" : "Online",
-				"link" : "https://www.surveymonkey.com/s/5MLKR9H"
-			}
-		],
-		[
-			{
-				"month": "November"
-			},
-			{
-				"date": moment("2015-11-06 11"),
-				"description" : "animeo IP Webinar",
-				"location" : "Online",
-				"link" : "https://www.surveymonkey.com/s/5M99ZGF"
-			},
-			{
-				"date": moment("2015-11-06 16"),
-				"description" : "TrueOutlook Webinar",
-				"location" : "Online",
-				"link" : "https://www.surveymonkey.com/s/5M2QQCT"
-			},
-			{
-				"date": moment("2015-11-20 11"),
-				"description" : "Motor Systems Webinar",
-				"location" : "Online",
-				"link" : "https://www.surveymonkey.com/s/5MJST2N"
-			},
-			{
-				"date": moment("2015-11-20 16"),
-				"description" : "Intelligent-RS485 Motor Webinar",
-				"location" : "Online",
-				"link" : "https://www.surveymonkey.com/s/5MQ6BJ9"
-			}
-		],
-		[
-			{
-				"month": "December"
-			},
-			{
-				"month" : "Dec",
-				"date" : "2-4",
-				"time" : "8:00 AM",
-				"description" : "Level 2 Training<span style='color:#E60505;'>*</span>",
-				"location" : "Somfy, FL",
-				"link" : "#December"
+				"link" : "http://sburgess.us"
 			}
 		]
 	];
